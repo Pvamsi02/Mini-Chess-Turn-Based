@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-image: linear-gradient(#9fc3e9, #23303d); 
+    background-image: linear-gradient(#9fc3e9, #23303d);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,11 +24,12 @@ h3 {
     flex-direction: column;
     align-items: center;
     background-color: #f4f4f4;
-    padding: 20px;
+    padding: 0px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     margin: 20px;
     max-width: 450px;
+    margin-top: 80px;
     /* margin: 0 auto; */
     width: 100%;
     /* margin-top: 80px; */
@@ -47,7 +48,7 @@ h3 {
     flex: 1;
     background-color: #fff;
     padding: 20px;
-    margin-left: 20px;
+    margin-left: 5px;
     margin-right: 20px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
@@ -64,7 +65,6 @@ h3 {
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     margin: 20px;
-    max-width: 500px;
 }
 
 #moveHistoryTable {
@@ -98,12 +98,12 @@ h3 {
     line-height: 60px;
     font-size: 20px;
     font-weight: bold;
-    transition: background-color 0.3s, transform 0.3s;
+    transition: background-color 0.5s, transform 0.8s;
 }
 
 .cell:hover {
     background-color: #d4d4d4;
-    transform: scale(1.05);
+    transform: scale(1.15);
     cursor: pointer;
 }
 
@@ -121,16 +121,17 @@ h3 {
 
 #status {
     margin-top: 10px;
+    margin-bottom: 10px;
     font-size: 18px;
     font-weight: bold;
     color: #555;
 }
 
 table {
-    width: 100%;
     border-collapse: collapse;
     margin-top: 15px;
     margin-bottom: 25px;
+    width: 300px;
 }
 
 th,
@@ -162,4 +163,34 @@ td {
 
 #status.player-B {
     color: #2196f3;
+}
+
+header {
+    background-color: #f8f9fa;
+    color: #333;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    position: fixed;
+    top: 0;
+    margin-bottom: 5px;
+    width: 100%;
+    z-index: 1000;
+}
+
+header p {
+    margin: 0;
+    font-size: 16px;
+}
+
+header a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header a:hover {
+    color: #0056b3;
+    text-decoration: underline;
 }
